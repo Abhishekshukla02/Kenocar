@@ -1,0 +1,27 @@
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+keno_create_customer:
+    path:     /create-customer
+    defaults: { _controller: AppBundle:Default:createCustomer }
+
+keno_create_car:
+    path:     /add-car
+    defaults: { _controller: AppBundle:Default:createCar }
+
+keno_customer_car:
+    path:     /add-customer-car
+    defaults: { _controller: AppBundle:Default:addCustomerCar }
+
+keno_get_customer_car:
+    path:     /get-customer-car
+    defaults: { _controller: AppBundle:Default:getCustomerCar }
+
+keno_delete_car:
+    path:     /delete-car
+    defaults: { _controller: AppBundle:Default:deleteCar }
+
+
+
